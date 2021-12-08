@@ -32,10 +32,10 @@ public class Booking_insert extends SimpleTagSupport {
             JspWriter w = getJspContext().getOut();
             
             try {Class.forName("com.mysql.jdbc.Driver");
-             out.println("Connected to driver");
+//              out.println("Connected to driver");
              
              try {Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/health", "root","");
-                out.println("<br/>Connected to DB");
+//               out.println("<br/>Connected to DB");
                 
                 Statement st = c.createStatement();
                 
